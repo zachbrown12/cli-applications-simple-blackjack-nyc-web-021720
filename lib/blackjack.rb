@@ -19,7 +19,7 @@ def get_user_input
 end
 
 def end_game(card_total)
-  "Sorry, you hit #{card_total}. Thanks for playing!"
+  puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
 def initial_round
@@ -28,8 +28,12 @@ def initial_round
   display_card_total(card_total)
 end
 
-def hit?
-  # code hit? here
+def hit?(card_total)
+  prompt_user
+  input = get_user_input
+    if input == 's'
+    elsif input == 'h'
+     deal_card
 end
 
 def invalid_command
