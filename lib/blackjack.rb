@@ -18,12 +18,12 @@ def get_user_input
   gets
 end
 
-def end_game
-  # code #end_game here
+def end_game(card_total)
+  "Sorry, you hit #{card_total"
 end
 
 def initial_round
-  # code #initial_round here
+  display_card_total
 end
 
 def hit?
